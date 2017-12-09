@@ -8,31 +8,42 @@ body {
 }
 
 .navigation {
-	border-bottom: 1px solid #333;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	/* border-bottom: 1px solid #333; */
+	/* align-items: left; */
 	padding: .5em;
-	background: #fff;
+	/* background: #fff; */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 230px;
+	height: 100vh;
+	z-index: 99;
 
 	.logo {
 		width: 230px;
 	}
 
 	nav {
-		flex: 1;
-		text-align: right;
-		padding: 0 1em;
+		position: fixed;
+		/* text-align: left; */
+		/* padding: 0; */
+		top: 120px;
+		left: 22px;
 	}
 
 	a {
-		color: #333;
-		font-size: 18px;
-		text-decoration: none;
-		padding: 0 1em;
+		color: #fff;
+	    font-size: 18px;
+	    text-decoration: none;
+	    padding: 1em;
+	    /* position: fixed; */
+	    top: 0;
+	    left: 0;
+	    /* background: red; */
+	    display: flex;
 
-		&hover {
-			color: #000;
+		&:hover {
+			color: #ddd;
 		}
 	}
 }
@@ -45,7 +56,12 @@ article {
 	color: #fff;
 	max-width: 600px;
 	margin: 0 auto;
-    padding: 0 1em;
+    padding: 1em 0;
+
+    p {
+    	font-size: 18px;
+    	line-height: 25px;
+    }
 }
 
 .footer {
