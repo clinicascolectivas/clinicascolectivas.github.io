@@ -157,8 +157,8 @@ function render(a) {
 function onDotHover(index) {
     dotsGeometry.vertices[index].tl = new TimelineMax();
     dotsGeometry.vertices[index].tl.to(dotsGeometry.vertices[index], 1, {
-        scaleX: 10,
-        ease: Elastic.easeOut.config(2, 0.2),
+        scaleX: 15,
+        ease: Elastic.easeOut.config(2, 0.9),
         onUpdate: function() {
             attributeSizes.array[index] = dotsGeometry.vertices[index].scaleX;
         }
@@ -167,7 +167,7 @@ function onDotHover(index) {
 
 function mouseOut(index) {
     dotsGeometry.vertices[index].tl.to(dotsGeometry.vertices[index], 0.4, {
-        scaleX: 5,
+        scaleX: 3,
         ease: Power2.easeOut,
         onUpdate: function() {
             attributeSizes.array[index] = dotsGeometry.vertices[index].scaleX;

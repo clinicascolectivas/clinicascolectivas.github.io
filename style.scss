@@ -244,6 +244,11 @@ a.demo--current {
 	position: fixed;
 	opacity: 0.3;
 	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 200vw !important;
+	height: 1000px !important;
 }
 
 .scene--left {
@@ -732,4 +737,23 @@ a.demo--current {
 		display: block;
 		margin: 0.5em 0 0 1em;
 	}
+}
+
+
+.menu--adsila .menu__item.active .menu__item-name::before,
+.menu--adsila .menu__item.active .menu__item-name::before,
+.menu--adsila .menu__item.active .menu__item-label::before,
+.menu--adsila .menu__item.active .menu__item-label::before {
+	transform: scale3d(1,1,1);
+}
+
+.menu--adsila .menu__item.active .menu__item-label,
+.menu--adsila .menu__item.active .menu__item-label {
+	transform: translate3d(0,0,0);
+}
+
+.menu--adsila .menu__item.active .menu__item-label::before,
+.menu--adsila .menu__item.active .menu__item-label::before {
+	transform-origin: 0% 50%;
+	transition-timing-function: ease;
 }
