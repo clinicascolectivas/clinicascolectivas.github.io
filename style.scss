@@ -26,10 +26,34 @@ body {
 	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
-	background-color: #000;
-	background-color: var(--color-bg);
+	//background-color: #000;
+	//background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+ 
+background: linear-gradient(346deg, #6a2c70, #b83b5e, #f08a5d);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
 }
 
 /* Fade effect */
@@ -218,7 +242,7 @@ a.demo--current {
 .scene {
 	position: fixed;
 	opacity: 0.3;
-
+	top: 0;
 }
 
 .scene--left {
