@@ -21,6 +21,9 @@ body {
 
 	.logo {
 		width: 230px;
+		position: relative;
+		top: 15px;
+		left: 15px;
 	}
 
 	nav {
@@ -29,23 +32,31 @@ body {
 		/* padding: 0; */
 		top: 120px;
 		left: 22px;
-	}
 
-	a {
-		color: #fff;
-	    font-size: 18px;
-	    text-decoration: none;
-	    //padding: 1em;
-	    //position: fixed;
-	    top: 0;
-	    left: 0;
-	    //background: red;
-	    display: flex;
+		a {
+			color: #fff;
+		    font-size: 18px;
+		    text-decoration: none;
+		    //padding: 1em;
+		    //position: fixed;
+		    top: 0;
+		    left: 0;
+		    //background: red;
+		    display: flex;
 
-		&:hover {
-			color: #ddd;
+			&:hover {
+				color: #ddd;
+			}
 		}
 	}
+
+	
+}
+
+.social-facebook {
+	position: fixed; 
+	top: 25px;
+	right: 25px;
 }
 
 .main-container {
