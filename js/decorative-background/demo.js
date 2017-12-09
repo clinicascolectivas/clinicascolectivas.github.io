@@ -9,8 +9,8 @@
  * http://www.codrops.com
  */
 {
-	setTimeout(() => document.body.classList.add('render'), 60);
-	const navdemos = Array.from(document.querySelectorAll('nav.demos > .demo'));
+	setTimeout(() => document.body.classList.add('render'), 260);
+	const navdemos = Array.from(document.querySelectorAll('nav > .demo-2'));
 	const total = navdemos.length;
 	const current = navdemos.findIndex(el => el.classList.contains('demo--current'));
 	const navigate = (linkEl) => {
