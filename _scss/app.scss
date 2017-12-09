@@ -13,6 +13,7 @@ body {
 	flex-direction: row;
 	align-items: center;
 	padding: .5em;
+	background: #fff;
 
 	.logo {
 		width: 230px;
@@ -36,3 +37,19 @@ body {
 	}
 }
 
+.main-container {
+	min-height: 100vh
+}
+
+article {
+	color: #fff;
+	max-width: 600px;
+	margin: 0 auto;
+    padding: 0 1em;
+}
+
+.footer {
+	background: #fff; padding: 2em;  text-align: center;
+	z-index: 99;
+	position: relative;
+}
