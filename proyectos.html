@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="content">
+<div class="content" style="background: #cd3131">
 	<canvas class="scene scene--full" id="scene"></canvas>
 	<script type="x-shader/x-vertex" id="wrapVertexShader">
 		attribute float size;
@@ -25,17 +25,29 @@ layout: default
 			gl_FragColor = color;
 		}
 	</script>
-	<div class="content__inner">
+	<div style="position: relative; z-index: 99">
 
-<article>
-	<h2 class="animated fadeInUp">Proyectos</h2>
-	<h4 class="animated fadeInUp">El trabajo del colectivo se desarrolla en tres grandes ejes</h4>
+<section>
+<h2 class="animated fadeInUp">Proyectos</h2>
+<h4 class="animated fadeInUp">El trabajo del colectivo se desarrolla en tres grandes ejes</h4>
 <ul class="animated fadeInUp">
-<li class="animated fadeInUp">Ciclo Clínicas Colectivas</li>
-<li class="animated fadeInUp">Acontecimientos/ Festejos</li>
-<li class="animated fadeInUp">Arte de Sitio Espefíco (Site Specific)/ Intervenciones</li>
+	<li class="animated fadeInUp">Ciclo Clínicas Colectivas</li>
+	<li class="animated fadeInUp">Acontecimientos/ Festejos</li>
+	<li class="animated fadeInUp">Arte de Sitio Espefíco (Site Specific)/ Intervenciones</li>
 </ul>
-</article>
+
+<div class="items" style="display: flex; max-width: 500px; ">
+	
+	{% for clinicas in site.clinicas %}
+	  <div class="item animated fadeInUp" style="width: 33%; margin: 1%;">
+	    <a class="image" href="{{ site.baseurl }}{{ clinicas.url }}" style="max-height: 200px; display: block; overflow: hidden;">
+	      <img src="{{ clinicas.img }}" alt="{{ clinicas.title }}" width="300px">
+	    </a>    
+	  </div>
+	{% endfor %}
+</div>
+
+</section>
 </div>
 
 
