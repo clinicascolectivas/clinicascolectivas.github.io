@@ -1,0 +1,8 @@
+- link: /
+  name: Inicio
+- link: /nosotrxs/
+  name: Nosotrxs
+- link: /proyectos/
+  name: Proyectos
+- link: /contacto/
+  name: Contacto
