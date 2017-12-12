@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="navigation">
+<div class="navigation" style="z-index: 1; height: 50px;">
 	<a href="/" class="logo">
 		<img src="/img/logo-clinicas.svg" alt="" >
 	</a>
@@ -40,27 +40,28 @@ layout: default
 		  {% if links.title == page.title %}
 		    {% unless forloop.first %}
 		      {% assign prevurl = prev.url %}
+		      {% assign prevtitle = prev.title %}
 		    {% endunless %}
 		    {% unless forloop.last %}
 		      {% assign next = document[forloop.index] %}
 		      {% assign nexturl = next.url %}
+		      {% assign nexttitle = next.title %}
 		    {% endunless %}
 		  {% endif %}
 		  {% assign prev = links %}
 		{% endfor %}
 
-		<script>
-		document.body.onkeyup = function(e){
-		if (e.keyCode == '37') { window.location = '{{prevurl}}'; }
-		if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
-		};
-		</script>
 
-		<h2>Atajos de teclado</h2>
 
-		{% if prevurl %}<a href="{{prevurl}}" class="prev">Flecha Izquierda {{prevurl}}</a>{% endif %}<br />
 
-		{% if nexturl %}<a href="{{nexturl}}" class="nxt">Flecha derecha {{nexturl}}</a>{% endif %}
+
+		{% if prevurl %}<a href="{{prevurl}}" class="prev"
+		style="z-index: 999; display: block; position: fixed; top: 50vh; left: 0; background: #333; color: #fff; padding: .5em 1em;" 
+		><b>Flecha Izquierda</b><br> <i>{{prevtitle}}</i></a>{% endif %}<br />
+
+		{% if nexturl %}<a href="{{nexturl}}" class="nxt"
+		style="z-index: 999; display: block; position: fixed; top: 50vh; right: 0; background: #333; color: #fff; padding: .5em 1em; text-align: right;" 
+		><b>Flecha derecha</b><br> <i>{{next.title}}</i></a>{% endif %}
 
 		</article>
 		
