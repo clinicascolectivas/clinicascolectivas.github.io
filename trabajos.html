@@ -1,0 +1,65 @@
+---
+layout: nav-content
+---
+
+<div class="works">
+	<canvas class="scene scene--full" id="scene"></canvas>
+	<script type="x-shader/x-vertex" id="wrapVertexShader">
+		attribute float size;
+		attribute vec3 color;
+		varying vec3 vColor;
+		void main() {
+			vColor = color;
+			vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+			gl_PointSize = size * ( 350.0 / - mvPosition.z );
+			gl_Position = projectionMatrix * mvPosition;
+		}
+	</script>
+	<script type="x-shader/x-fragment" id="wrapFragmentShader">
+		varying vec3 vColor;
+		uniform sampler2D texture;
+		void main(){
+			vec4 textureColor = texture2D( texture, gl_PointCoord );
+			if ( textureColor.a < 0.3 ) discard;
+			vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
+			gl_FragColor = color;
+		}
+	</script>
+	<section style="position: relative; z-index: 99">
+	<h2>Trabajos</h2>
+	<h4>El trabajo del colectivo se desarrolla en tres grandes ejes</h4>
+	<ul>
+		<li>Ciclo Clínicas Colectivas</li>
+		<li>Acontecimientos/ Festejos</li>
+		<li>Arte de Sitio Espefíco (Site Specific)/ Intervenciones</li>
+	</ul>
+
+	<div class="items" style="display: block; width: 80%; ">
+		
+		<h2 style="width: 100%">Clinicas</h2>
+		{% for clinicas in site.clinicas %}
+		  <div class="item " style="margin: 1%; display: inline-block;">
+		    <a class="image" href="{{ site.baseurl }}{{ clinicas.url }}">
+		      <img src="{{ site.baseurl }}{{ clinicas.img }}" alt="{{ clinicas.title }}" width="250px">
+		    </a>    
+		  </div>
+		{% endfor %}
+
+		<h2  style="width: 100%">Intervenciones</h2>
+		{% for intervenciones in site.intervenciones %}
+		  <div class="item " style="margin: 1%; display: inline-block;">
+		    <a class="image" href="{{ site.baseurl }}{{ intervenciones.url }}">
+		      <img src="{{ intervenciones.img }}" alt="{{ intervenciones.title }}" width="250px">
+		    </a>    
+		  </div>
+		{% endfor %}
+	</div>
+
+	</section>
+</div>
+
+
+
+
+
+

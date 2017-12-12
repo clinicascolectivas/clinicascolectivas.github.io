@@ -83,8 +83,8 @@ article {
 
 section {
 	color: #fff;
-	min-width: 720px;
-	margin: 0 auto;
+	width: calc(100% - 300px);
+	margin: 0 0 0 300px;
     padding: 1em 0;
 
     p {

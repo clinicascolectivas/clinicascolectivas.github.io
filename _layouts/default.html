@@ -15,29 +15,8 @@
 </head>
 <body>
 	
-	<div class="navigation">
-		<a href="/" class="logo">
-			<img src="/img/logo-clinicas.svg" alt="" >
-		</a>
+	{{content}}
 
-		<nav class="menu menu--adsila">
-		  {% for item in site.data.navigation %}
-		    <a href="{{ item.link }}"
-		    class="menu__item {% if item.link == page.url or page.url contains 'clinicas' %}active{% endif %}">
-		      <span class="menu__item-name">{{ item.name }}</span>
-		    </a>
-		  {% endfor %}
-		</nav>
-
-		<a href="https://www.facebook.com/profile.php?id=100004875495580" target="_blank" class="social-facebook">
-			<img src="/img/social-facebook.svg" width="25px" alt="">
-			
-		</a>
-	</div>
-	
-	<div class="main-container">
-		{{content}}
-	</div>
 
 	
 
