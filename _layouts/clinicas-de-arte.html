@@ -2,14 +2,44 @@
 layout: default
 ---
 
-	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
 
-<div class="navigation" style="z-index: 1; height: 50px;">
-	<a href="/" class="logo">
+	{% capture clinicas %}{{page.collection}}{% endcapture %}
+	  {% if page.collection %}
+	    {% assign  document = site[clinicas]  %}
+	  {% endif %}
+	{% for links in document  %}
+	  {% if links.title == page.title %}
+	    {% unless forloop.first %}
+	      {% assign prevurl = prev.url %}
+	      {% assign prevtitle = prev.title %}
+	    {% endunless %}
+	    {% unless forloop.last %}
+	      {% assign next = document[forloop.index] %}
+	      {% assign nexturl = next.url %}
+	      {% assign nexttitle = next.title %}
+	    {% endunless %}
+	  {% endif %}
+	  {% assign prev = links %}
+	{% endfor %}
+
+<div id="inicio" style="display: none; opacity: 0;"></div>
+
+<div class="navigation" style="z-index: 1;width: 100%;left: 0;right: 0;background: rgba(0, 0, 0, 0.4);height: 90px;">
+	<a href="/trabajos" class="logo" style="left: calc(50vw - 45px);top: 8px;width: 60px;overflow: hidden;display: block;">
 		<img src="/img/logo-clinicas.svg" alt="" >
 	</a>
 
-	<a href="/trabajos" style="position: fixed; top: 100px; left: 0; background: #fff; color: #333; padding: 1em; width: 200px; font-weight: 600;" > <i class="fas fa-lg fa-fw fa-th-large" aria-hidden="true"></i> Volver a trabajos</a>
+	{% if prevurl %}<a href="{{prevurl}}" class="prev"
+	style="z-index: 999; display: block; position: fixed; top: 20px; left: 0; background: #333; color: #fff; padding: .75em 2em;" 
+	><i class="fas fa-lg fa-fw fa-angle-left"></i> <b> {{prevtitle}}</b></a>{% endif %}
+
+	{% if nexturl %}<a href="{{nexturl}}" class="nxt"
+	style="z-index: 999; display: block; position: fixed; top: 20px; right: 0; background: #333; color: #fff; padding: .75em 2em; text-align: right;" 
+	><b> {{next.title}} </b> <i class="fas fa-lg fa-fw fa-angle-right"></i></a>{% endif %}
+
+	<a href="#inicio" style="position: fixed; bottom: 20px; right: 0; background: #fff; color: #333; padding: 1em; font-weight: 600;" > <i class="fas fa-lg fa-fw fa-angle-up"></i></a>
 
 	
 	<a href="https://www.facebook.com/profile.php?id=100004875495580" target="_blank" class="social-facebook">
@@ -21,64 +51,24 @@ layout: default
 <div class="main-container">
 	
 	<div class="animated fadeIn" style="padding: 0; background: #111; ">
-		<header style="background-image: url({{page.img}}); background-size: cover; height: 100vh; text-align: center; display: flex; align-items: center; flex-direction: column; justify-content: center; opacity: .4; background-color: #000; background-position: top center">
+		<h1 style="text-align: center;color: #fff;font-weight: 400;font-size: 6em;opacity: 1;font-family: 'Raleway Dots', cursive;text-transform: uppercase;position: absolute;top: 30vh;width: 800px;left: calc(50vw - 400px);margin: 0;">{{page.title}}</h1>
+		<header style="background-image: url({{page.featured_img}}); background-size: cover; height: 100vh; text-align: center; display: flex; align-items: center; flex-direction: column; justify-content: center; opacity: .2; background-color: #000; background-position: top center">
+		
 		</header>
 
 		<article>
-			<h1>{{page.title}}</h1>
+			
+			<p>
+				{{content}}
+			</p>
 
-			<i>
-			{{page.meta}}
-			</i> <br><br>
-		<p>
-			{{content}}
-		</p>
-
-		<div class="gallery">
-	
-	<a href="{{page.img}}" data-fancybox="images" data-srcset="{{page.img}}" class="item-gallery">
-		<img src="{{page.img}}" />
-	</a>
-	<a href="{{page.img}}" data-fancybox="images" data-srcset="{{page.img}}" class="item-gallery">
-		<img src="{{page.img}}" />
-	</a>
-
-	<a href="{{page.img}}" data-fancybox="images" data-srcset="{{page.img}}" class="item-gallery">
-		<img src="{{page.img}}" />
-	</a>
-
-</div>
-
-		{% capture clinicas %}{{page.collection}}{% endcapture %}
-		  {% if page.collection %}
-		    {% assign  document = site[clinicas]  %}
-		  {% endif %}
-		{% for links in document  %}
-		  {% if links.title == page.title %}
-		    {% unless forloop.first %}
-		      {% assign prevurl = prev.url %}
-		      {% assign prevtitle = prev.title %}
-		    {% endunless %}
-		    {% unless forloop.last %}
-		      {% assign next = document[forloop.index] %}
-		      {% assign nexturl = next.url %}
-		      {% assign nexttitle = next.title %}
-		    {% endunless %}
-		  {% endif %}
-		  {% assign prev = links %}
-		{% endfor %}
+		
 
 
 
 
 
-		{% if prevurl %}<a href="{{prevurl}}" class="prev"
-		style="z-index: 999; display: block; position: fixed; top: 50vh; left: 0; background: #333; color: #fff; padding: .5em 1em;" 
-		><i class="fas fa-lg fa-fw fa-angle-left"></i> <b> {{prevtitle}}</b></a>{% endif %}
 
-		{% if nexturl %}<a href="{{nexturl}}" class="nxt"
-		style="z-index: 999; display: block; position: fixed; top: 50vh; right: 0; background: #333; color: #fff; padding: .5em 1em; text-align: right;" 
-		><b> {{next.title}} </b> <i class="fas fa-lg fa-fw fa-angle-right"></i></a>{% endif %}
 
 		</article>
 		
@@ -89,3 +79,47 @@ layout: default
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>
 
 </div>
+
+
+<script>
+	// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
+
+
+
+

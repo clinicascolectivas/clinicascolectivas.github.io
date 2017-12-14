@@ -2,8 +2,10 @@
 layout: nav-content
 ---
 
-<div class="works">
-	<canvas class="scene scene--full" id="scene"></canvas>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<div class="works" id="to-top">
+	<canvas class="scene scene--full" id="scene" style="opacity: .4"></canvas>
 	<script type="x-shader/x-vertex" id="wrapVertexShader">
 		attribute float size;
 		attribute vec3 color;
@@ -26,30 +28,50 @@ layout: nav-content
 		}
 	</script>
 	<section style="position: relative; z-index: 99">
-	<h2>Trabajos</h2>
+	<h1>Trabajos</h1>
 	<h4>El trabajo del colectivo se desarrolla en tres grandes ejes</h4>
-	<ul>
-		<li>Ciclo Clínicas Colectivas</li>
-		<li>Acontecimientos/ Festejos</li>
-		<li>Arte de Sitio Espefíco (Site Specific)/ Intervenciones</li>
-	</ul>
+	<div class="trabajos-nav">
+		<a href="#clinicas" style="padding: .5em 1em; background: #fff; color: #333; border-radius: 5px; display: inline-block;">Clinicas</a>
+		<a href="#intervenciones" style="padding: .5em 1em; background: #fff; color: #333; border-radius: 5px; display: inline-block;">Intervenciones</a>
+		<a href="#satelites" style="padding: .5em 1em; background: #fff; color: #333; border-radius: 5px; display: inline-block;">Proyectos satelites</a>
+	</div>
 
 	<div class="items" style="display: block; width: 80%; ">
 		
-		<h2 style="width: 100%">Clinicas</h2>
+		<h2 id="clinicas"  style="margin: 50px 0 15px 0;width: 100%">Ciclo de CLÍNICAS COLECTIVAS</h2>
+
 		{% for clinicas in site.clinicas %}
 		  <div class="item " style="margin: 1%; display: inline-block;">
 		    <a class="image" href="{{ site.baseurl }}{{ clinicas.url }}">
 		      <img src="{{ site.baseurl }}{{ clinicas.img }}" alt="{{ clinicas.title }}" width="250px">
 		    </a>    
 		  </div>
-		{% endfor %}
 
-		<h2  style="width: 100%">Intervenciones</h2>
+
+		{% endfor %}
+		<p>
+		El ciclo "Clinicas Colectivas" son encuentros mensuales que se desarrollan desde el año 2013.
+		Consiste en encuentros abiertos en donde un artista y/o colectivo comparte su producción, procesos creativos e inquietudes,en un marco de diálogo, participación y reflexión horizontal.
+			
+		</p>
+		<p>
+        Consideramos a las clínicas como espacios de formación, reflexión, debate, intercambio de ideas y saberes., propiciando la recepción de las obras junto a sus productores, contextualizando a las producciones dentro de la trama de sentidos que construimos como comunidad.</p> 
+
+
+		<h2 id="intervenciones" style="margin: 50px 0 0 0;width: 100%">Intervenciones</h2>
 		{% for intervenciones in site.intervenciones %}
 		  <div class="item " style="margin: 1%; display: inline-block;">
 		    <a class="image" href="{{ site.baseurl }}{{ intervenciones.url }}">
 		      <img src="{{ intervenciones.img }}" alt="{{ intervenciones.title }}" width="250px">
+		    </a>    
+		  </div>
+		{% endfor %}
+
+		<h2 id="satelites" style="width: 100%">Proyectos satelites</h2>
+		{% for clinicas in site.clinicas limit:5 %}
+		  <div class="item " style="margin: 1%; display: inline-block;">
+		    <a class="image" href="{{ site.baseurl }}{{ clinicas.url }}">
+		      <img src="{{ clinicas.img }}" alt="{{ clinicas.title }}" width="250px">
 		    </a>    
 		  </div>
 		{% endfor %}
@@ -58,7 +80,44 @@ layout: nav-content
 	</section>
 </div>
 
-
+<script>
+	// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
 
 
 
