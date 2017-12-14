@@ -3,6 +3,35 @@ layout: clinicas-de-arte
 title: 13 Rarezas
 permalink: /clinicas/13-rarezas/
 img: /img/clinicas/13-rarezas.jpg
-featured_img: http://files.grupo-clinicas-colectivas6.webnode.com/200000113-98c9a99c3b/4.jpg
-meta: andares es un proyecto de arte colectivo a nivel visual
+featured_img: http://files.grupo-clinicas-colectivas6.webnode.com/200000112-47c2848bb7/3.jpg
+meta: La identidad es enemiga de lo idéntico
 ---
+
+<h2>"La identidad es enemiga de lo idéntico" </h2>
+<h3>Daniel Calmels.</h3>
+
+<p>
+	
+"En esta oportunidad, compartiremos una jornada junto a todxs los artistas que realizaron su clínica...La propuesta gira en torno a la sociabilización de una obra que sea considerada por sus realizadores como una rareza en el contexto habitual de su producción"
+</p>
+<i>(cita de la convocatoria)</i>
+
+<a href="http://files.grupo-clinicas-colectivas6.webnode.com/200000039-0a6d20b66c/rarezas.jpg" data-fancybox="images" data-srcset="http://files.grupo-clinicas-colectivas6.webnode.com/200000039-0a6d20b66c/rarezas.jpg" class="item-gallery">
+	<img width="100%" src="http://files.grupo-clinicas-colectivas6.webnode.com/200000039-0a6d20b66c/rarezas.jpg" />
+</a>
+
+<a href="http://files.grupo-clinicas-colectivas6.webnode.com/200000110-4f94c508d6/1.jpg" data-fancybox="images" data-srcset="http://files.grupo-clinicas-colectivas6.webnode.com/200000110-4f94c508d6/1.jpg" class="item-gallery">
+	<img width="100%" src="http://files.grupo-clinicas-colectivas6.webnode.com/200000110-4f94c508d6/1.jpg" />
+</a>
+
+<a href="http://files.grupo-clinicas-colectivas6.webnode.com/200000111-ae4d8af479/2.jpg" data-fancybox="images" data-srcset="http://files.grupo-clinicas-colectivas6.webnode.com/200000111-ae4d8af479/2.jpg" class="item-gallery">
+	<img width="100%" src="http://files.grupo-clinicas-colectivas6.webnode.com/200000111-ae4d8af479/2.jpg" />
+</a>
+
+<a href="http://files.grupo-clinicas-colectivas6.webnode.com/200000112-47c2848bb7/3.jpg" data-fancybox="images" data-srcset="http://files.grupo-clinicas-colectivas6.webnode.com/200000112-47c2848bb7/3.jpg" class="item-gallery">
+	<img width="100%" src="http://files.grupo-clinicas-colectivas6.webnode.com/200000112-47c2848bb7/3.jpg" />
+</a>
+
+<a href="http://files.grupo-clinicas-colectivas6.webnode.com/200000113-98c9a99c3b/4.jpg" data-fancybox="images" data-srcset="http://files.grupo-clinicas-colectivas6.webnode.com/200000113-98c9a99c3b/4.jpg" class="item-gallery">
+	<img width="100%" src="http://files.grupo-clinicas-colectivas6.webnode.com/200000113-98c9a99c3b/4.jpg" />
+</a>

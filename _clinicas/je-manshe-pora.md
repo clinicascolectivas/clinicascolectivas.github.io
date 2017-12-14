@@ -31,8 +31,8 @@ meta: andares es un proyecto de arte colectivo a nivel visual
 	<b>Pablo Neruda</b>
 </p>
 
-<a href="hhttp://files.grupo-clinicas-colectivas6.webnode.com/200000044-c697bc7942/DSC_0752.JPG" data-fancybox="images" data-srcset="hhttp://files.grupo-clinicas-colectivas6.webnode.com/200000044-c697bc7942/DSC_0752.JPG" class="item-gallery">
-	<img width="100%" src="hhttp://files.grupo-clinicas-colectivas6.webnode.com/200000044-c697bc7942/DSC_0752.JPG" />
+<a href="http://files.grupo-clinicas-colectivas6.webnode.com/200000044-c697bc7942/DSC_0752.JPG" data-fancybox="images" data-srcset="http://files.grupo-clinicas-colectivas6.webnode.com/200000044-c697bc7942/DSC_0752.JPG" class="item-gallery">
+	<img width="100%" src="http://files.grupo-clinicas-colectivas6.webnode.com/200000044-c697bc7942/DSC_0752.JPG" />
 </a>
 
 <a href="http://files.grupo-clinicas-colectivas6.webnode.com/200000048-a9438ab34b/DSC_0798.JPG" data-fancybox="images" data-srcset="http://files.grupo-clinicas-colectivas6.webnode.com/200000048-a9438ab34b/DSC_0798.JPG" class="item-gallery">
