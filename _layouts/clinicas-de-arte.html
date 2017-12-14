@@ -2,12 +2,14 @@
 layout: default
 ---
 
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
 <div class="navigation" style="z-index: 1; height: 50px;">
 	<a href="/" class="logo">
 		<img src="/img/logo-clinicas.svg" alt="" >
 	</a>
 
-	<a href="/trabajos" style="position: fixed; top: 100px; left: 0; background: #fff; color: #333; padding: 1em; width: 200px; font-weight: 600;" >Volver a trabajos</a>
+	<a href="/trabajos" style="position: fixed; top: 100px; left: 0; background: #fff; color: #333; padding: 1em; width: 200px; font-weight: 600;" > <i class="fas fa-lg fa-fw fa-th-large" aria-hidden="true"></i> Volver a trabajos</a>
 
 	
 	<a href="https://www.facebook.com/profile.php?id=100004875495580" target="_blank" class="social-facebook">
@@ -31,6 +33,21 @@ layout: default
 		<p>
 			{{content}}
 		</p>
+
+		<div class="gallery">
+	
+	<a href="{{page.img}}" data-fancybox="images" data-srcset="{{page.img}}" class="item-gallery">
+		<img src="{{page.img}}" />
+	</a>
+	<a href="{{page.img}}" data-fancybox="images" data-srcset="{{page.img}}" class="item-gallery">
+		<img src="{{page.img}}" />
+	</a>
+
+	<a href="{{page.img}}" data-fancybox="images" data-srcset="{{page.img}}" class="item-gallery">
+		<img src="{{page.img}}" />
+	</a>
+
+</div>
 
 		{% capture clinicas %}{{page.collection}}{% endcapture %}
 		  {% if page.collection %}
@@ -57,17 +74,18 @@ layout: default
 
 		{% if prevurl %}<a href="{{prevurl}}" class="prev"
 		style="z-index: 999; display: block; position: fixed; top: 50vh; left: 0; background: #333; color: #fff; padding: .5em 1em;" 
-		><b>Flecha Izquierda</b><br> <i>{{prevtitle}}</i></a>{% endif %}<br />
+		><i class="fas fa-lg fa-fw fa-angle-left"></i> <b> {{prevtitle}}</b></a>{% endif %}
 
 		{% if nexturl %}<a href="{{nexturl}}" class="nxt"
 		style="z-index: 999; display: block; position: fixed; top: 50vh; right: 0; background: #333; color: #fff; padding: .5em 1em; text-align: right;" 
-		><b>Flecha derecha</b><br> <i>{{next.title}}</i></a>{% endif %}
+		><b> {{next.title}} </b> <i class="fas fa-lg fa-fw fa-angle-right"></i></a>{% endif %}
 
 		</article>
 		
 	</div>
 
 
-
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>
 
 </div>
