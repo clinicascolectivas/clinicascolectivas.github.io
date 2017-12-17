@@ -15,10 +15,12 @@ permalink: pretty
 sass:
   sass_dir: _scss
 
-host: 192.168.137.63
+host: 10.0.0.6
 
 collections:
   clinicas:
     output: true
   intervenciones:
+    output: true
+  satelites:
     output: true

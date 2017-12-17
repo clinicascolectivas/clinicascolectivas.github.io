@@ -1,7 +1,6 @@
 ---
 layout: clinicas-de-arte
 title: Je manshe pora
-permalink: /clinicas/je-manshe-pora/
 img: /img/clinicas/je-manshe-pora.jpg
 featured_img: http://files.grupo-clinicas-colectivas6.webnode.com/200000048-a9438ab34b/DSC_0798.JPG
 meta: andares es un proyecto de arte colectivo a nivel visual

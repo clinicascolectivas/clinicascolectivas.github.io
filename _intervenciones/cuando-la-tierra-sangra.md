@@ -1,9 +1,7 @@
 ---
 layout: clinicas-de-arte
 title: Cuando la tierra sangra
-permalink: /intervenciones/cuando-la-tierra-sangra/
-img: http://files.grupo-clinicas-colectivas6.webnode.com/200000003-60e9b61e37/afiche%208%20de%20mayo%20ALVARO.jpg
-meta: La escritura es solo la imagen de algo prescindible
+img: /img/intervenciones/cuando-la-tierra-sangra.jpg
 ---
 
 <article>

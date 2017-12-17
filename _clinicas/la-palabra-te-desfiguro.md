@@ -1,7 +1,6 @@
 ---
 layout: clinicas-de-arte
 title: La palabra te desfiguro
-permalink: /clinicas/la-palabra-te-desfiguro/
 img: /img/clinicas/la-palabra-te-desfiguro.jpg
 featured_img: http://files.grupo-clinicas-colectivas6.webnode.com/200000058-89bd98ab80/DSC_0127.JPG
 meta: Encuentro de intercambio y producción literatura-artes visuales<
