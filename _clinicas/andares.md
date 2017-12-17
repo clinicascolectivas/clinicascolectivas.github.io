@@ -1,6 +1,6 @@
 ---
 layout: clinicas-de-arte
-title: Andares
+title: Facundo Cardella - Mariano Diaz
 img: /img/clinicas/andares.jpg
 featured_img: https://github.com/clinicascolectivas/enfoques/blob/master/clinicas/2016/facundo-cardella-mariano-diaz/andares-1.jpg?raw=true
 ---

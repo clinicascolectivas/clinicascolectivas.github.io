@@ -1,9 +1,13 @@
 ---
 layout: clinicas-de-arte
-title: 12 de Octubre
+title: 12 mapas el 12 de Octubre
 img: /img/intervenciones/12-de-octubre.jpg
 featured_img: https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2014/12%20de%20octubre/12-de-octubre-6.jpg?raw=true
 ---
+
+<p>
+	Conmemorando el día 12 de Octubre como primer día de resistencia de nuestros pueblos, se realizó una intervención con vecinas y vecinos del Paraje Entre Ríos. La misma consistió en la elaboración de 12 mapas de América del Sur realizadas con materiales del lugar (carbón, arenas, tizas, etc.) sobre Ruta 16. La misma intentaba interpelar a quienes circulaban por la ruta, invitando a reflexionar sobre dicha fecha. 
+</p>
 
 <a href="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2014/12%20de%20octubre/12-de-octubre-1.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2014/12%20de%20octubre/12-de-octubre-1.jpg?raw=true" class="item-gallery">
 	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2014/12%20de%20octubre/12-de-octubre-1.jpg?raw=true" />

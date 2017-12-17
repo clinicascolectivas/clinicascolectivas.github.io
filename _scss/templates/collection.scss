@@ -1,0 +1,61 @@
+	.prev, .nxt {
+		z-index: 999;
+		display: block;
+		position: fixed;
+		top: 20px;
+		background: #333;
+		color: #fff;
+		padding: .75em 2em;
+		-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
+		-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
+		transition: all .4s cubic-bezier(0.7,0,.3,1);
+
+		&:hover {
+			background: #fff;
+			color: #333;
+		}
+
+	}
+
+	.prev {
+		left: 0;
+	}
+
+	.nxt {
+		text-align: right;
+		right: 0;
+	}
+
+	.back-to-top {
+		position: fixed;
+		bottom: 20px;
+		right: 0;
+		background: #fff;
+		color: #333;
+		padding: 1em;
+		font-weight: 600;
+		z-index: 99;
+	}
+
+	.back-to-work {
+		background: #fff;
+		padding: .75em 2em;
+		position: fixed;
+		left: 0;
+		bottom: 25px;
+		-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
+		-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
+		transition: all .4s cubic-bezier(0.7,0,.3,1);
+
+		&:hover {
+			background: #333;
+			color: #fff;
+		}
+	}
+
+
+	.social-facebook {
+		position: fixed; 
+		bottom: 25px;
+		left: 25px;
+	}

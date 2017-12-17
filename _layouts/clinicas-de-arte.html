@@ -5,24 +5,24 @@ layout: default
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
 
-	{% capture clinicas %}{{page.collection}}{% endcapture %}
-	  {% if page.collection %}
-	    {% assign  document = site[clinicas]  %}
-	  {% endif %}
-	{% for links in document  %}
-	  {% if links.title == page.title %}
-	    {% unless forloop.first %}
-	      {% assign prevurl = prev.url %}
-	      {% assign prevtitle = prev.title %}
-	    {% endunless %}
-	    {% unless forloop.last %}
-	      {% assign next = document[forloop.index] %}
-	      {% assign nexturl = next.url %}
-	      {% assign nexttitle = next.title %}
-	    {% endunless %}
-	  {% endif %}
-	  {% assign prev = links %}
-	{% endfor %}
+{% capture clinicas %}{{page.collection}}{% endcapture %}
+  {% if page.collection %}
+    {% assign  document = site[clinicas]  %}
+  {% endif %}
+{% for links in document  %}
+  {% if links.title == page.title %}
+    {% unless forloop.first %}
+      {% assign prevurl = prev.url %}
+      {% assign prevtitle = prev.title %}
+    {% endunless %}
+    {% unless forloop.last %}
+      {% assign next = document[forloop.index] %}
+      {% assign nexturl = next.url %}
+      {% assign nexttitle = next.title %}
+    {% endunless %}
+  {% endif %}
+  {% assign prev = links %}
+{% endfor %}
 
 <div id="inicio" style="display: none; opacity: 0;"></div>
 
@@ -31,49 +31,29 @@ layout: default
 		<img src="/img/logo-clinicas.svg" alt="" >
 	</a>
 
-	{% if prevurl %}<a href="{{prevurl}}" class="prev"
-	style="z-index: 999; display: block; position: fixed; top: 20px; left: 0; background: #333; color: #fff; padding: .75em 2em;" 
-	><i class="fas fa-lg fa-fw fa-angle-left"></i> <b> {{prevtitle}}</b></a>{% endif %}
+	{% if prevurl %}<a href="{{prevurl}}" class="prev"><i class="fas fa-lg fa-fw fa-angle-left"></i> <b> {{prevtitle}}</b></a>{% endif %}
 
-	{% if nexturl %}<a href="{{nexturl}}" class="nxt"
-	style="z-index: 999; display: block; position: fixed; top: 20px; right: 0; background: #333; color: #fff; padding: .75em 2em; text-align: right;" 
-	><b> {{next.title}} </b> <i class="fas fa-lg fa-fw fa-angle-right"></i></a>{% endif %}
+	{% if nexturl %}<a href="{{nexturl}}" class="nxt"><b> {{next.title}} </b> <i class="fas fa-lg fa-fw fa-angle-right"></i></a>{% endif %}
 
-	<a href="#inicio" style="position: fixed; bottom: 20px; right: 0; background: #fff; color: #333; padding: 1em; font-weight: 600;" > <i class="fas fa-lg fa-fw fa-angle-up"></i></a>
-
+	<a href="#inicio" class="back-to-top"><i class="fas fa-lg fa-fw fa-angle-up"></i></a>
 	
-	<a href="/trabajos" class="social-facebook" style="background: #fff; padding: .75em 2em; left: 0;">
+	<a href="/trabajos" class="back-to-work">
 		<i class="fas fa-lg fa-fw fa-angle-left"></i> Volver a trabajos
-		
 	</a>
 </div>
 
-<div class="main-container">
+<div class="main-container clinic">
 	
 	<div class="animated fadeIn" style="padding: 0; background: #111; ">
-		<h1 style="text-align: center;color: #fff;font-weight: 400;font-size: 6em;opacity: 1;font-family: 'Raleway Dots', cursive;text-transform: uppercase;position: absolute;top: 30vh;width: 800px;left: calc(50vw - 400px);margin: 0;">{{page.title}}</h1>
-		<header style="background-image: url({{page.featured_img}}); background-size: cover; height: 100vh; text-align: center; display: flex; align-items: center; flex-direction: column; justify-content: center; opacity: .2; background-color: #000; background-position: top center">
-		
+		<h1 class="header-title">{{page.title}}</h1>
+		<header style="background-image: url({{page.featured_img}});">
 		</header>
-
 		<article>
-			
 			<p>
 				{{content}}
 			</p>
-
-		
-
-
-
-
-
-
-
 		</article>
-		
 	</div>
-
 
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>

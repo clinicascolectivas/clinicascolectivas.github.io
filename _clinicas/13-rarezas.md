@@ -2,6 +2,7 @@
 layout: clinicas-de-arte
 title: 13 Rarezas
 img: /img/clinicas/13-rarezas.jpg
+year: 2014
 featured_img: http://files.grupo-clinicas-colectivas6.webnode.com/200000112-47c2848bb7/3.jpg
 meta: La identidad es enemiga de lo idéntico
 ---

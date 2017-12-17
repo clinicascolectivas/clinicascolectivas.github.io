@@ -3,7 +3,7 @@ layout: nav-content
 ---
 
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-
+<div id="inicio" style="display: none; opacity: 0;"></div>
 <div class="works" id="to-top">
 	<canvas class="scene scene--full" id="scene" style="opacity: .4"></canvas>
 	<script type="x-shader/x-vertex" id="wrapVertexShader">
@@ -31,35 +31,35 @@ layout: nav-content
 	<h1 style="padding-top: 100px;">Trabajos</h1>
 	<h4>El trabajo del colectivo se desarrolla en tres grandes ejes</h4>
 	<div class="trabajos-nav">
-		<a href="#intervenciones" style="padding: .5em 1em; background: #fff; color: #333; border-radius: 5px; display: inline-block;">Intervenciones</a>
-		<a href="#satelites" style="padding: .5em 1em; background: #fff; color: #333; border-radius: 5px; display: inline-block;">Proyectos satelites</a>
-		<a href="#clinicas" style="padding: .5em 1em; background: #fff; color: #333; border-radius: 5px; display: inline-block;">Clinicas</a>
+		<a href="#intervenciones">Intervenciones</a>
+		<a href="#satelites">Proyectos satelites</a>
+		<a href="#clinicas">Clinicas</a>
 	</div>
 
-	<div class="items" style="display: block; width: 80%; ">
+	<div class="items">
 		
-		<h2 id="intervenciones" style="margin: 50px 0 0 0;width: 100%">Intervenciones</h2>
+		<h2 id="intervenciones" style="margin: 50px 0 0 0;">Intervenciones</h2>
 		{% for intervenciones in site.intervenciones %}
-		  <div class="item " style="margin: 1%; display: inline-block;">
+		  <div class="item ">
 		    <a class="image" href="{{ site.baseurl }}{{ intervenciones.url }}">
 		      <img src="{{ intervenciones.img }}" alt="{{ intervenciones.title }}" width="250px">
 		    </a>    
 		  </div>
 		{% endfor %}
 
-		<h2 id="satelites" style="width: 100%">Proyectos satelites</h2>
+		<h2 id="satelites">Proyectos satelites</h2>
 		{% for satelites in site.satelites %}
-		  <div class="item " style="margin: 1%; display: inline-block;">
+		  <div class="item ">
 		    <a class="image" href="{{ site.baseurl }}{{ satelites.url }}">
 		      <img src="{{ satelites.img }}" alt="{{ satelites.title }}" width="250px">
 		    </a>    
 		  </div>
 		{% endfor %}
 
-		<h2 id="clinicas"  style="margin: 50px 0 15px 0;width: 100%">Ciclo de clinicas colectivas</h2>
+		<h2 id="clinicas" style="margin: 50px 0 15px 0;">Ciclo de clinicas colectivas</h2>
 
 		{% for clinicas in site.clinicas %}
-		  <div class="item " style="margin: 1%; display: inline-block;">
+		  <div class="item ">
 		    <a class="image" href="{{ site.baseurl }}{{ clinicas.url }}">
 		      <img src="{{ site.baseurl }}{{ clinicas.img }}" alt="{{ clinicas.title }}" width="250px">
 		    </a>    
@@ -74,14 +74,11 @@ layout: nav-content
 		</p>
 		<p>
         Consideramos a las clínicas como espacios de formación, reflexión, debate, intercambio de ideas y saberes., propiciando la recepción de las obras junto a sus productores, contextualizando a las producciones dentro de la trama de sentidos que construimos como comunidad.</p> 
-
-
-		
-
-		
 	</div>
 
 	</section>
+
+	<a href="#inicio" class="back-to-top"><i class="fas fa-lg fa-fw fa-angle-up"></i></a>
 </div>
 
 <script>

@@ -1,13 +1,85 @@
 .works {
 
+	.items {
+		display: block;
+		width: 80%; 
+	}
+
+	h2 {
+		width: 100%;
+		padding: 25px 0 0 0;
+	}
+
 	.item {
 		-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
 		-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
 		transition: all .4s cubic-bezier(0.7,0,.3,1);
-		
+		margin: 1%; display: inline-block;
+
 		&:hover {
 			opacity: .9;
 			transform: scale(1.05);
+		}
+	}
+}
+
+.trabajos-nav {
+
+	a {
+		padding: .5em 1em;
+		background: #fff;
+		color: #333;
+		border-radius: 5px;
+		display: inline-block;
+		-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
+		-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
+		transition: all .4s cubic-bezier(0.7,0,.3,1);
+
+		&:hover {
+			background: #333;
+			color: #fff;
+			font-weight: 600;
+		}
+	}
+}
+
+.clinic {
+	.header-title {
+		text-align: center;
+		color: #fff;
+		font-weight: 400;
+		font-size: 6em;
+		opacity: 1;
+		font-family: 'Raleway Dots', cursive;
+		text-transform: uppercase;
+		position: absolute;
+		top: 30vh;
+		width: 800px;
+		left: calc(50vw - 400px);
+		margin: 0;
+		z-index: 1;
+	}
+
+	header {
+		background-size: cover;
+		height: 100vh;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		opacity: .4;
+		background-color: #000;
+		background-position: top center;
+
+		&:before {
+			//content: '';
+			//position: fixed;
+			//background: red;
+			//left: 0;
+			//right: 0;
+			//top: 0;
+			//bottom: 0;
 		}
 	}
 }
