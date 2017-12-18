@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Clinicas colectivas</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -11,15 +12,32 @@
 <meta name="apple-mobile-web-app-title" content="Clinicas Colectivas">
 <meta name="application-name" content="Clinicas Colectivas">
 <meta name="theme-color" content="#ffffff">
-	  <link rel="stylesheet" href="{{site.baseurl}}/style.css">
-	  <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+<link rel="stylesheet" href="{{site.baseurl}}/style.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
 </head>
 <body>
 	
+	<div class="offcanvas js-menu sliding-panel-content">
+	  <nav class="menu menu--adsila">
+		  {% for item in site.data.navigation %}
+		    <a href="{{ item.link }}"
+		    class="menu__item {% if item.link == page.url or page.url contains 'clinicas' %}active{% endif %}">
+		      <span class="menu__item-name">{{ item.name }}</span>
+		    </a>
+		  {% endfor %}
+		</nav>
+	</div>
+
 	{{content}}
 
+	<div class="js-menu-screen sliding-panel-fade-screen"></div>
 
-	
+
+	{% include offcanvas.html %}
 
 	<script src="{{site.baseurl}}/js/decorative-background/demo.js"></script>
 	<script src="{{site.baseurl}}/js/decorative-background/three.min.js"></script>

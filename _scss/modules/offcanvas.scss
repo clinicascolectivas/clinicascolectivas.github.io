@@ -1,0 +1,126 @@
+
+.offcanvas {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    z-index: 999;
+    padding-top: 40px;
+    /* background: #fff; */
+    bottom: 0;
+    width: 100%;
+    /* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.2); */
+    -webkit-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+    -moz-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+    text-align: center;
+
+	nav {
+
+	}
+
+	a {
+
+	}
+}
+
+.sliding-panel-content {
+  $action-color: #ddd !default;
+  $dark-gray: #f9f9f9 !default;
+  $sliding-panel-border-color: #25a55f;
+  $sliding-panel-background: lighten($sliding-panel-border-color, 5%);
+  $sliding-panel-color: #fff;
+  $sliding-panel-border: 1px solid $sliding-panel-border-color;
+  $sliding-panel-background-hover: #205436;
+  $sliding-panel-color-hover: #fff;
+  $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
+
+	//position: fixed;
+	//top: 0;
+	//right: auto;
+	//bottom: 0;
+	//left: 0;
+	//background-size: 220px 100%;
+	//background: $sliding-panel-background;
+	//-webkit-overflow-scrolling: touch;
+	//overflow-y: auto;
+	//transform: translateX(-220px);
+	//-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
+	//-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
+	//transition: all .4s cubic-bezier(0.7,0,.3,1);
+	//z-index: 999999;
+	//width: 220px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li a {
+    border-bottom: $sliding-panel-border;
+    color: $sliding-panel-color;
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:focus {
+      background-color: $sliding-panel-background-focus;
+    }
+
+    &:hover {
+      background-color: $sliding-panel-background-hover;
+      color: $sliding-panel-color-hover;
+    }
+  }
+
+  &.is-visible {
+    left: 0;
+  }
+}
+
+.sliding-panel-fade-screen {
+  @include position(fixed, 0);
+  background: black;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  z-index: 99;
+
+  &.is-visible {
+    opacity: 0.8;
+    visibility: visible;
+  }
+}
+
+.sliding-panel-button {
+	cursor: pointer;
+	outline: none;
+	padding: 10px 16px;
+	position: fixed;
+	left: -60px;
+	top: 12px;
+	z-index: 99999;
+	-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
+	-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
+	transition: all .4s cubic-bezier(0.7,0,.3,1);
+	background: none;
+	border: none;
+	font-size: 35px;
+	color: #fff;
+
+	@include media($vertical) {
+		left: 10px;
+		top: 12px;
+	}
+
+
+
+	img {
+		height: 1.3em;
+	}
+}

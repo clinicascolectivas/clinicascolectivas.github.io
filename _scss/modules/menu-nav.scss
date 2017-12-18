@@ -9,7 +9,12 @@
 	left: 0;
 	width: 230px;
 	height: 100vh;
-	z-index: 99;
+	z-index: 100;
+
+	@include media($vertical) {
+		width: 100%;left: 0;right: 0;background: rgba(0, 0, 0, 0.6);height: 90px;
+	 }
+
 
 	.logo {
 		width: 230px;
@@ -22,9 +27,13 @@
 		transition: all .4s cubic-bezier(0.7,0,.3,1);
 		overflow: hidden;
 
-		&:hover {
-			width: 230px;
-		}
+		@include media($vertical) {
+			width: 60px;
+			left: calc(50vw - 40px);
+			top: 7px;
+		 }
+
+
 
 	}
 
@@ -34,6 +43,10 @@
 		/* padding: 0; */
 		top: 120px;
 		left: 22px;
+
+		@include media($vertical) {
+		display: none;
+		 }
 
 		a {
 			color: #fff;

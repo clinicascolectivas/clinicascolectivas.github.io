@@ -3,7 +3,7 @@ layout: nav-content
 ---
 
 
-<div class="content" style="background: #333">
+<div class="content mobile-home" style="background: #333">
 	<canvas class="scene scene--full" id="scene" ></canvas>
 	<script type="x-shader/x-vertex" id="wrapVertexShader">
 		attribute float size;
@@ -26,9 +26,10 @@ layout: nav-content
 			gl_FragColor = color;
 		}
 	</script>
-	<div class="content__inner">
+	<div class="content__inner home">
 		
-	<img src="/img/logo-clinicas.svg" class="animated fadeInDown" style="animation-duration: 1.5s;" alt="" width="500px">
+	<img src="/img/logo-clinicas.svg" class="animated fadeInDown" style="width: 100%; animation-duration: 1.5s;" alt=""> <br>
+	<a class="animated fadeInDown" href="/trabajos">Ver trabajos</a>
 	</div>
 	</div>
 

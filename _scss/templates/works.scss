@@ -1,8 +1,15 @@
 .works {
 
+    padding: 1em;
+
 	.items {
 		display: block;
 		width: 80%; 
+
+		@include media($vertical) {
+		 	width: 100%;
+	 	    text-align: center;
+		 }
 	}
 
 	h2 {
@@ -34,6 +41,7 @@
 		-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
 		-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
 		transition: all .4s cubic-bezier(0.7,0,.3,1);
+	    margin: 1%;
 
 		&:hover {
 			background: #333;
@@ -58,6 +66,15 @@
 		left: calc(50vw - 400px);
 		margin: 0;
 		z-index: 1;
+
+		@include media($vertical) {
+			font-weight: 400;
+			font-size: 50px;
+			position: absolute;
+			top: 25vh;
+			width: 100%;
+			left: 0;
+		 }
 	}
 
 	header {
@@ -72,6 +89,10 @@
 		background-color: #000;
 		background-position: top center;
 
+		@include media($vertical) {
+			height: 80vh;
+		}
+
 		&:before {
 			//content: '';
 			//position: fixed;
@@ -80,6 +101,26 @@
 			//right: 0;
 			//top: 0;
 			//bottom: 0;
+		}
+	}
+
+	article {
+		color: #fff;
+		max-width: 600px;
+		margin: 0 auto;
+		padding: 1em;
+
+		h1, h2, h3, h4, h5, h6 {
+			text-align: center;
+		}
+
+		p {
+
+			@include media($vertical) {
+				font-size: 16px;
+				line-height: 26px;
+				text-align: center;
+			}
 		}
 	}
 }

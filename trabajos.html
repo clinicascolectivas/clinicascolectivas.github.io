@@ -5,29 +5,7 @@ layout: nav-content
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 
 <div id="inicio" style="display: none; opacity: 0;"></div>
-<div class="works" id="to-top" style="background: #129a88;">
-	<canvas class="scene scene--full" id="scene" style="opacity: .4"></canvas>
-	<script type="x-shader/x-vertex" id="wrapVertexShader">
-		attribute float size;
-		attribute vec3 color;
-		varying vec3 vColor;
-		void main() {
-			vColor = color;
-			vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-			gl_PointSize = size * ( 350.0 / - mvPosition.z );
-			gl_Position = projectionMatrix * mvPosition;
-		}
-	</script>
-	<script type="x-shader/x-fragment" id="wrapFragmentShader">
-		varying vec3 vColor;
-		uniform sampler2D texture;
-		void main(){
-			vec4 textureColor = texture2D( texture, gl_PointCoord );
-			if ( textureColor.a < 0.3 ) discard;
-			vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
-			gl_FragColor = color;
-		}
-	</script>
+<div class="works" id="to-top" style="background: rgba(18, 154, 136, 0.61);">
 	<section style="position: relative; z-index: 99">
 	<h1 style="padding-top: 100px;">Trabajos</h1>
 	<h4>El trabajo del colectivo se desarrolla en tres grandes ejes</h4>
