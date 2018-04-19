@@ -4,7 +4,11 @@ title: Cuando la tierra sangra
 img: /img/intervenciones/cuando-la-tierra-sangra.jpg
 featured_img: https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/cuando-la-tierra-sangra/cuando-la-tierra-sangra-2.jpg?raw=true
 ---
-SSJSKDDJJU DNFHRYT   NSHDYE SNFH SHRITOK SMLSMLSMDS SLMDLS
+En el ingreso norte a  la localidad de El Hoyo en la provincia de Chubut, realizamos una serie de intervenciones en la banquina de la ruta 40, en  una beta de arcilla en la montaña. 
+
+Esta zona ha sido afectada por numerosos incendios forestales que destruyeron miles de hectáreas de bosques, chacras y viviendas.
+
+En este sitio arrasado por el fuego, construimos metáforas sobre las formas de vincularnos con el territorio, reflexionado sobre las formas de representar la naturaleza,  problemáticas socio ambientales que están significando un deterioro de los ambientes que habitamos. 
 
 <a href="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/cuando-la-tierra-sangra/cuando-la-tierra-sangra-1.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/cuando-la-tierra-sangra/cuando-la-tierra-sangra-1.jpg?raw=true" class="item-gallery">
 	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/cuando-la-tierra-sangra/cuando-la-tierra-sangra-1.jpg?raw=true" />
