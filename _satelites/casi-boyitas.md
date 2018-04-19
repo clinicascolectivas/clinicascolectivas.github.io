@@ -1,6 +1,7 @@
 ---
 layout: clinicas-de-arte
-title: Fuente Austral - Alvaro
+title: Casi boyitas
+Autores: Álvaro Martín
 img: /img/satelites/fuente-austral-alvaro.jpg
 featured_img: https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/fuente-austral-martin-alvaro/fuente-austral-alvaro-8.jpg?raw=true
 ---
