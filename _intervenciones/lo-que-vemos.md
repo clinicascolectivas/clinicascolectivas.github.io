@@ -1,6 +1,6 @@
 ---
 layout: clinicas-de-arte
-title: Lo que vemos, lo que nos mira
+title: Lo que vemos, <small>lo que nos mira</small>
 img: /img/intervenciones/lo-que-no-vemos-nos-mira.jpg
 featured_img: https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/lo-que-no-vemos-nos-mira/lo-que-no-vemos-nos-mira-2.jpg?raw=true
 ---

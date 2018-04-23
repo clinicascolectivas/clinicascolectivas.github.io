@@ -43,15 +43,17 @@ layout: default
 
 <div class="main-container clinic">
 	
-	<div class="animated fadeIn" style="padding: 0; background: #111; ">
-		<h1 class="header-title">{{page.title}}</h1>
-		<b>{{page.autores}}</b>
-		<header style="background-image: url({{page.featured_img}});">
-		</header>
+	<div class="clinic-container">
+    <div class="hero">
+      <h1 class="header-title">
+        <b>{{page.autores}}</b>
+        <span>{{page.title}}</span> 
+      </h1>
+      <header style="background-image: url({{page.featured_img}});">
+      </header>
+    </div>
 		<article>
-			<p>
 				{{content}}
-			</p>
 		</article>
 	</div>
 

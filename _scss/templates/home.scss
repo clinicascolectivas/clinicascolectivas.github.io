@@ -8,20 +8,25 @@
 
 	a {
 		padding: .5em 1em;
-		background: #fff;
-		color: #333;
+		//background: #fff;
+		color: #fff;
 		border-radius: 5px;
 		display: inline-block;
-		-webkit-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
-		-moz-transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
-		transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+		-webkit-transition: all 1.1s cubic-bezier(0.7, 0, 0.3, 1);
+		-moz-transition: all 1.1s cubic-bezier(0.7, 0, 0.3, 1);
+		transition: all 1.1s cubic-bezier(0.7, 0, 0.3, 1);
 		margin-top: 6%;
 		font-size: 20px;
+		text-transform: uppercase;
+		letter-spacing: 7px;
+		opacity: .7;
 
 		&:hover {
-			background: #333;
+			//background: #333;
 			color: #fff;
-			font-weight: 600;
+			opacity: 1;
+			letter-spacing: 11px;
+			//1font-weight: 600;
 		}
 	}
 }

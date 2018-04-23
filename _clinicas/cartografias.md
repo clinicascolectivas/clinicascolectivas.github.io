@@ -1,5 +1,6 @@
 ---
 layout: clinicas-de-arte
+autores: maia gatas vargas
 title: ¿Cómo se cartografía una frontera?
 img: /img/clinicas/cartografias.jpg
 featured_img: https://github.com/clinicascolectivas/enfoques/blob/master/clinicas/2017/cartografias/cartografias-2.jpg?raw=true

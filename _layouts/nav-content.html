@@ -7,7 +7,7 @@ layout: default
 			<img src="/img/logo-clinicas.svg" alt="" >
 		</a>
 
-		<nav class="menu menu--adsila">
+		<nav class="menu menu--adsila {{page.menu-class}}">
 		  {% for item in site.data.navigation %}
 		    <a href="{{ item.link }}"
 		    class="menu__item {% if item.link == page.url or page.url contains 'clinicas' %}active{% endif %}">

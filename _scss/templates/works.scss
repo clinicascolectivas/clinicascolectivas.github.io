@@ -52,6 +52,23 @@
 }
 
 .clinic {
+
+	.clinic-container {
+		background: #333; 
+		
+	} 
+
+	.clinic-content {
+		padding: 0;
+		-webkit-transition: all 1.4s cubic-bezier(0.7,0,.3,1);
+		-moz-transition: all 1.4s cubic-bezier(0.7,0,.3,1);
+		transition: all 1.4s cubic-bezier(0.7,0,.3,1);
+
+
+	}
+
+
+
 	.header-title {
 		text-align: center;
 		color: #fff;
@@ -61,11 +78,27 @@
 		font-family: 'Raleway Dots', 'Raleway', sans-serif;
 		text-transform: uppercase;
 		position: absolute;
-		top: 30vh;
-		width: 800px;
-		left: calc(50vw - 400px);
+		top: 20vh;
+		width: 860px;
+		left: calc(50vw - 430px);
 		margin: 0;
 		z-index: 1;
+		-webkit-transition: all 1.4s cubic-bezier(0.7,0,.3,1);
+		-moz-transition: all 1.4s cubic-bezier(0.7,0,.3,1);
+		transition: all 1.4s cubic-bezier(0.7,0,.3,1);
+
+
+		b {
+			font-size: 18px; letter-spacing: 2px;
+			font-family: 'Raleway', sans-serif;
+			display: block; 
+			margin: 25px 0 15px 0;
+			text-shadow: 5px 5px 11px #333;
+		}
+
+		span {
+			text-shadow: 5px 5px 11px #333;
+		}
 
 		@include media($vertical) {
 			font-weight: 400;
@@ -79,15 +112,20 @@
 
 	header {
 		background-size: cover;
-		height: 100vh;
+		height: 80vh;
 		text-align: center;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 		justify-content: center;
-		opacity: .4;
+		opacity: .3;
 		background-color: #000;
 		background-position: top center;
+		-webkit-transition: all 1.4s cubic-bezier(0.7,0,.3,1);
+		-moz-transition: all 1.4s cubic-bezier(0.7,0,.3,1);
+		transition: all 1.4s cubic-bezier(0.7,0,.3,1);
+
+		
 
 		@include media($vertical) {
 			height: 80vh;
@@ -104,14 +142,35 @@
 		}
 	}
 
+	.hero {
+		
+	}
+
+	.hero:hover {
+
+		.header-title {
+			opacity: 1;
+
+		}
+
+		header {
+			opacity: .5;
+		}
+	}
+
 	article {
 		color: #fff;
-		max-width: 600px;
+		max-width: 730px;
 		margin: 0 auto;
 		padding: 1em;
 
+		-webkit-transition: all 1.4s cubic-bezier(0.7,0,.3,1);
+		-moz-transition: all 1.4s cubic-bezier(0.7,0,.3,1);
+		transition: all 1.4s cubic-bezier(0.7,0,.3,1);
+
+
 		h1, h2, h3, h4, h5, h6 {
-			text-align: center;
+			text-align: left;
 		}
 
 		p {

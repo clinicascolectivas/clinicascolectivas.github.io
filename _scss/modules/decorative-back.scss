@@ -226,14 +226,16 @@ a.demo--current {
 }
 
 .content__title {
-	font-size: 10vw;
+	font-size: 90px;
 	font-weight: normal;
 	color: var(--color-title);
 	text-align: center;
 	margin: 1em 0 .5em 0;
 	text-transform: uppercase;
 	pointer-events: none;
-	color: #fff
+	color: #fff;
+	font-family: 'Raleway Dots', 'Raleway', sans-serif;
+	letter-spacing: 23px;
 }
 
 .content__subtitle {
