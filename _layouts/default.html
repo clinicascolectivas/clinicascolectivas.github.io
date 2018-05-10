@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	{% if page.title %}
-	<title>Clinica > {{ page.title }}</title>
+	<title>{{ page.categories }} > {{ page.title }}</title>
 	{% else %}
 	<title>Clinicas colectivas</title>
 	{% endif %}
@@ -17,7 +17,7 @@
 
   <meta content="Clinicas colectivas" property="og:site_name">
   {% if page.title %}
-  <meta content="Clinica > {{ page.title }}" property="og:title">
+  <meta content="{{ page.categories }} > {{ page.title }}" property="og:title">
   {% else %}
   <meta content="Clinicas colectivas" property="og:title">
   {% endif %}

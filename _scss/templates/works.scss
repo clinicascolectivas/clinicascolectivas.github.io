@@ -35,9 +35,10 @@
 	}
 
 	.works-collections {
-		width: 100%;
-		margin: 0 auto;
-		max-width: 950px;
+		width: calc(100% - 250px);
+		margin: 0 0 0 250px;
+		max-width: 1170px;
+		padding: 0 2em;
 	}
 }
 
