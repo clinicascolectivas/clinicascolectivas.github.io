@@ -26,7 +26,7 @@ layout: default
 <div id="inicio" style="display: none; opacity: 0;"></div>
 
 <div class="navigation" style="z-index: 1;width: 100%;left: 0;right: 0;background: rgba(0, 0, 0, 0.4);height: 80px;">
-	<a href="/" class="logo" style="left: calc(50vw - 30px);top: 0;width: 60px;overflow: hidden;display: block;">
+	<a href="/trabajos" class="logo" style="left: calc(50vw - 60px);top: 0;width: 60px;overflow: hidden;display: block;">
 		<img src="/img/logo-clinicas.svg" alt="" >
 	</a>
 
@@ -48,6 +48,32 @@ layout: default
       <h1 class="header-title">
         <b>{{page.autores}}</b>
         <span>{{page.title}}</span> 
+        <time datetime="{{ page.date | %Y-%m-%d %H:%M+01:00 }}">
+        <!-- Whitespace added for readability -->
+        {% if page.category contains 'satelite' %}
+        <a href="/trabajos#{{page.category}}">proyecto satelite</a> del 
+        {% else %}
+        <a href="/trabajos#{{page.category}}">{{page.category}}</a> del 
+        {% endif %}
+        
+        {{ page.date | date: "%d" }}
+        {% assign m = page.date | date: "%-m" %}
+        {% case m %}
+         {% when '1' %}Enero
+         {% when '2' %}Febrero
+         {% when '3' %}Marzo
+         {% when '4' %}Abril
+         {% when '5' %}Mayo
+         {% when '6' %}Junio
+         {% when '7' %}Julio
+         {% when '8' %}Agosto
+         {% when '9' %}Septiembre
+         {% when '10' %}Octubre
+         {% when '11' %}Noviembre
+         {% when '12' %}Diciembre
+        {% endcase %}
+        {{ page.date | date: "%Y" }}
+        </time>
       </h1>
       <header style="background-image: url({{page.featured_img}});">
       </header>
