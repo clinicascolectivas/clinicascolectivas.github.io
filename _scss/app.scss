@@ -14,7 +14,7 @@ $vertical: new-breakpoint(max-width 800px 4);
 
 @import 'modules/menu-nav';
 @import 'modules/offcanvas';
-//@import 'modules/font-face';
+@import 'modules/font-face';
 @import 'modules/decorative-back';
 
 @import 'templates/default';

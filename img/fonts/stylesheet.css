@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'webGas';
+    src: url('webGas.eot');
+    src: url('webGas.eot?#iefix') format('embedded-opentype'),
+        url('webGas.woff2') format('woff2'),
+        url('webGas.woff') format('woff'),
+        url('webGas.ttf') format('truetype'),
+        url('webGas.svg#webGas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
