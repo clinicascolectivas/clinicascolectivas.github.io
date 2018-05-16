@@ -1,6 +1,6 @@
 ---
 layout: clinicas-de-arte
-title: Lara alem
+title: Laura alem
 category: clinica
 img: /img/clinicas/laura-alem.jpg
 featured_img: https://github.com/clinicascolectivas/enfoques/blob/master/clinicas/2014/laura-alem/laura-alem-1.jpg?raw=true
