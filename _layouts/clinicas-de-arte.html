@@ -49,7 +49,9 @@ layout: default
     <div class="hero">
       <h1 class="header-title">
         <b>{{page.autores}}</b>
+        <a class="title-go" href="#inicio-clinica">
         <span>{{page.title}}</span> 
+        </a>
        
         <time datetime="{{ page.date | %Y-%m-%d %H:%M+01:00 }}">
         <!-- Whitespace added for readability -->
@@ -76,16 +78,16 @@ layout: default
            {% when '12' %}Diciembre
           {% endcase %}
           {{ page.date | date: "%Y" }}
-        </a>
+        
         </time>
-
+        </a>
       </h1>
       <header style="background-image: url({{page.featured_img}});">
       </header>
     </div>
 		
     {% if page.gallery %}
-      <article class="gallery">
+      <article class="gallery" id="inicio-clinica">
 
       {{content}}
       </article>
@@ -100,7 +102,7 @@ layout: default
 
            <i class="fab fa-facebook fa-3x"></i>
        </a>
-       <span>compartí esta {{page.category}}</span>
+       <span>compartír {{page.category}}</span>
     </div>
 	</div>
 

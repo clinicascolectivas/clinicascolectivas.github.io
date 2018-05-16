@@ -8,7 +8,7 @@ gallery: true
 ---
 
 
-<h1>
+<h2 href="/satelites/processus-fase-1">
 	Fase 1 - Mendoza
 </h2>
 
@@ -46,11 +46,11 @@ gallery: true
 	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/procesos-creativos-fase-I/procesos-creativos-fase-I-11.jpg?raw=true" />
 </a>
 
-<p href="/satelites/processus-fase-2">
+<h2 href="/satelites/processus-fase-2" style="opacity: .2">
 	Fase 2 - Neuquén <i>(próximamente)</i>	
-</p>
+</h2>
 
-<h1>
+<h2 href="/satelites/processus-fase-3">
 	Fase 3 - Bolson
 </h2>
 
@@ -88,7 +88,7 @@ gallery: true
 	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/procesos-creativos-fase-III/procesos-creativos-fase-III-11.jpg?raw=true" />
 </a>
 
-<h1>
+<h2 href="/satelites/processus-fase-4">
 	Fase 4 - Esquel
 </h2>
 
