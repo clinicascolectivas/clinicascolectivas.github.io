@@ -8,9 +8,9 @@ gallery: true
 ---
 
 
-<a href="/satelites/processus-fase-1">
+<h1>
 	Fase 1 - Mendoza
-</a>
+</h2>
 
 <a href="https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/procesos-creativos-fase-I/procesos-creativos-fase-I-1.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/procesos-creativos-fase-I/procesos-creativos-fase-I-1.jpg?raw=true" class="item-gallery">
 	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/procesos-creativos-fase-I/procesos-creativos-fase-I-1.jpg?raw=true" />
@@ -50,9 +50,9 @@ gallery: true
 	Fase 2 - Neuquén <i>(próximamente)</i>	
 </p>
 
-<a href="/satelites/processus-fase-3">
+<h1>
 	Fase 3 - Bolson
-</a>
+</h2>
 
 <a href="https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/procesos-creativos-fase-III/procesos-creativos-fase-III-1.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/procesos-creativos-fase-III/procesos-creativos-fase-III-1.jpg?raw=true" class="item-gallery">
 	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/procesos-creativos-fase-III/procesos-creativos-fase-III-1.jpg?raw=true" />
@@ -88,9 +88,9 @@ gallery: true
 	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/procesos-creativos-fase-III/procesos-creativos-fase-III-11.jpg?raw=true" />
 </a>
 
-<a href="/satelites/processus-fase-4">
+<h1>
 	Fase 4 - Esquel
-</a>
+</h2>
 
 <a href="https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/procesos-creativos-fase-IV/procesos-creativos-fase-IV-1.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/procesos-creativos-fase-IV/procesos-creativos-fase-IV-1.jpg?raw=true" class="item-gallery">
 	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/satelites/2017/procesos-creativos-fase-IV/procesos-creativos-fase-IV-1.jpg?raw=true" />

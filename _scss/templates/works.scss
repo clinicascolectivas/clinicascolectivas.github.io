@@ -409,3 +409,34 @@
 			}
 		}
 	}
+
+.share-bar {
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	opacity: .2;
+	-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
+	-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
+	transition: all .4s cubic-bezier(0.7,0,.3,1);
+	border-top: 1px solid #666;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	svg {
+	}
+
+	a {
+
+	}
+
+	span {
+		display: block;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 2px;
+		font-size: 15px;
+		margin: 15px;
+	}
+}
