@@ -1,0 +1,86 @@
+---
+layout: nav-content
+---
+
+
+
+<div class="content works" style="background: #333">
+	<canvas class="scene scene--full" id="scene"></canvas>
+	<script type="x-shader/x-vertex" id="wrapVertexShader">
+		attribute float size;
+		attribute vec3 color;
+		varying vec3 vColor;
+		void main() {
+			vColor = color;
+			vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+			gl_PointSize = size * ( 350.0 / - mvPosition.z );
+			gl_Position = projectionMatrix * mvPosition;
+		}
+	</script>
+	<script type="x-shader/x-fragment" id="wrapFragmentShader">
+		varying vec3 vColor;
+		uniform sampler2D texture;
+		void main(){
+			vec4 textureColor = texture2D( texture, gl_PointCoord );
+			if ( textureColor.a < 0.3 ) discard;
+			vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
+			gl_FragColor = color;
+		}
+	</script>
+	<div class="content__inner archive" style="z-index: 99; padding-top: 60px;">
+	<h2 class="content__title animated fadeInDown">Cronologia</h2>
+	<ul class="archive-list works-collections">
+	  {% for post in site.posts %}
+	    {% unless post.next %}
+	      <h3 style="color: #fff">
+	      	{{{ post.date | date: "%d" }}
+          {% assign m = post.date | date: "%-m" %}
+          {% case m %}
+           {% when '1' %}Enero
+           {% when '2' %}Febrero
+           {% when '3' %}Marzo
+           {% when '4' %}Abril
+           {% when '5' %}Mayo
+           {% when '6' %}Junio
+           {% when '7' %}Julio
+           {% when '8' %}Agosto
+           {% when '9' %}Septiembre
+           {% when '10' %}Octubre
+           {% when '11' %}Noviembre
+           {% when '12' %}Diciembre
+          {% endcase %}
+          {{ post.date | date: "%Y" }}
+	      </h3>
+	    {% else %}
+	      {% capture year %}{{ post.date | date: '%Y %b' }}{% endcapture %}
+	      {% capture nyear %}{{ post.next.date | date: '%Y %b' }}{% endcapture %}
+	      {% if year != nyear %}
+	        <h3 style="color: #fff">{{{ post.date | date: "%d" }}
+          {% assign m = post.date | date: "%-m" %}
+          {% case m %}
+           {% when '1' %}Enero
+           {% when '2' %}Febrero
+           {% when '3' %}Marzo
+           {% when '4' %}Abril
+           {% when '5' %}Mayo
+           {% when '6' %}Junio
+           {% when '7' %}Julio
+           {% when '8' %}Agosto
+           {% when '9' %}Septiembre
+           {% when '10' %}Octubre
+           {% when '11' %}Noviembre
+           {% when '12' %}Diciembre
+          {% endcase %}
+          {{ post.date | date: "%Y" }}</h3>
+	      {% endif %}
+	    {% endunless %}
+
+	    <div class="item ">
+        <a class="image" href="{{ site.baseurl }}{{ post.url }}">
+          <img src="{{ post.img }}" alt="{{ post.title }}" width="250px">
+        </a>    
+      </div>
+	  {% endfor %}
+	</ul>
+	</div>
+</div>
