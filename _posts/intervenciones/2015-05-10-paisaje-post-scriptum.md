@@ -6,6 +6,8 @@ img: /img/intervenciones/paisaje-post-scriptum.jpg
 featured_img: https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-6.jpg?raw=true
 ---
 
+
+
 <h2> Segunda jornada de trabajo: Parque Nacional Lago Puelo</h2>
 
 <p>
@@ -66,4 +68,20 @@ featured_img: https://github.com/clinicascolectivas/enfoques/blob/master/interve
 
 <a href="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-10.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-10.jpg?raw=true" class="item-gallery">
 	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-10.jpg?raw=true" />
+</a>
+
+<a href="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-11.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-11.jpg?raw=true" class="item-gallery">
+	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-11.jpg?raw=true" />
+</a>
+
+<a href="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-12.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-12.jpg?raw=true" class="item-gallery">
+	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-12.jpg?raw=true" />
+</a>
+
+<a href="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-13.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-13.jpg?raw=true" class="item-gallery">
+	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-13.jpg?raw=true" />
+</a>
+
+<a href="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-14.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-14.jpg?raw=true" class="item-gallery">
+	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2015/paisaje-post-scriptum/paisaje-post-scriptum-14.jpg?raw=true" />
 </a>

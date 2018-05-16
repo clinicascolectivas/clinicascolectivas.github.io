@@ -64,7 +64,8 @@ featured_img: https://github.com/clinicascolectivas/enfoques/blob/master/satelit
 
 
 <a href="/satelites/processus-fase-2">
-	Fase 2 - Neuquen
+	Fase 2 - Neuquén
+	<i>proximamente</i>
 </a>
 
 <a href="/satelites/processus-fase-3">

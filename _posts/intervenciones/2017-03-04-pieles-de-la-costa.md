@@ -73,3 +73,15 @@ featured_img: https://github.com/clinicascolectivas/enfoques/blob/master/interve
 <a href="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/pieles-de-la-costa/pieles-de-la-costa-23.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/pieles-de-la-costa/pieles-de-la-costa-23.jpg?raw=true" class="item-gallery">
 	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/pieles-de-la-costa/pieles-de-la-costa-23.jpg?raw=true" />
 </a>
+
+<a href="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/pieles-de-la-costa/pieles-de-la-costa-24.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/pieles-de-la-costa/pieles-de-la-costa-24.jpg?raw=true" class="item-gallery">
+	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/pieles-de-la-costa/pieles-de-la-costa-24.jpg?raw=true" />
+</a>
+
+<a href="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/pieles-de-la-costa/pieles-de-la-costa-25.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/pieles-de-la-costa/pieles-de-la-costa-25.jpg?raw=true" class="item-gallery">
+	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/pieles-de-la-costa/pieles-de-la-costa-25.jpg?raw=true" />
+</a>
+
+<a href="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/pieles-de-la-costa/pieles-de-la-costa-26.jpg?raw=true" data-fancybox="images" data-srcset="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/pieles-de-la-costa/pieles-de-la-costa-26.jpg?raw=true" class="item-gallery">
+	<img width="100%" src="https://github.com/clinicascolectivas/enfoques/blob/master/intervenciones/2017/pieles-de-la-costa/pieles-de-la-costa-26.jpg?raw=true" />
+</a>

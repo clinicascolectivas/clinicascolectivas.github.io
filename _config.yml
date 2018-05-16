@@ -15,7 +15,7 @@ permalink: /:categories/:title/
 sass:
   sass_dir: _scss
 
-host: 192.168.1.22
+host: 192.168.0.27
 
 collections:
   clinicas:
