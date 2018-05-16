@@ -241,6 +241,27 @@
 			}
 		}
 	}
+
+	.gallery {
+		max-width: 900px;
+
+		.item-gallery {
+			width: 30%;
+			margin: 10px;
+			height: 160px;
+			overflow: hidden;
+			display: inline-block;
+
+			@include media($vertical) {
+				width: 100%;
+			}
+		}
+
+		p {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
 }
 
 .featured-container {

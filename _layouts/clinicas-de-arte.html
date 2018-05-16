@@ -78,9 +78,17 @@ layout: default
       <header style="background-image: url({{page.featured_img}});">
       </header>
     </div>
-		<article>
-				{{content}}
-		</article>
+		
+    {% if page.gallery %}
+      <article class="gallery">
+      {{content}}
+      </article>
+    {% else %}
+      <article>
+      {{content}}
+      </article>
+    {% endif %}
+		
 	</div>
 
 
