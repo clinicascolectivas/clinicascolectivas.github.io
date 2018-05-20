@@ -1,6 +1,6 @@
 ---
 layout: clinicas-de-arte
-title: luciana zarzoso
+title: Luciana Zarzoso
 category: clinica
 img: /img/clinicas/luciana-zarzoso.jpg
 featured_img: https://github.com/clinicascolectivas/enfoques/blob/master/clinicas/2016/luciana-zarzoso/luciana-zarzoso-2.jpg?raw=true

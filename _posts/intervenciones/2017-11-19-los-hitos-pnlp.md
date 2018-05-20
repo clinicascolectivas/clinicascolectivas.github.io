@@ -3,7 +3,7 @@ layout: clinicas-de-arte
 title: Los Hitos
 category: intervencion
 autores: Hito N°10 Lago Puelo Argentina-Chile
-img: /img/intervenciones/los-hitos.jpg
+img: /img/intervenciones/lo-intocable-del-limite.jpg
 featured_img: https://raw.githubusercontent.com/clinicascolectivas/enfoques/master/intervenciones/2017/los-hitos/lo-intocable-del-limite-20.jpg
 gallery: true
 ---

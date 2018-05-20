@@ -32,8 +32,8 @@ layout: nav-content
 	<ul class="archive-list works-collections">
 	  {% for post in site.posts %}
 	    {% unless post.next %}
-	      <h3 style="color: #fff">
-	      	{{{ post.date | date: "%d" }}
+	      <h3 style="color: #fff" id="{{ post.date | date: '%Y-%m' }}">
+	      	
           {% assign m = post.date | date: "%-m" %}
           {% case m %}
            {% when '1' %}Enero
@@ -55,7 +55,7 @@ layout: nav-content
 	      {% capture year %}{{ post.date | date: '%Y %b' }}{% endcapture %}
 	      {% capture nyear %}{{ post.next.date | date: '%Y %b' }}{% endcapture %}
 	      {% if year != nyear %}
-	        <h3 style="color: #fff">{{{ post.date | date: "%d" }}
+	        <h3 style="color: #fff" id="{{ post.date | date: '%Y-%m' }}">
           {% assign m = post.date | date: "%-m" %}
           {% case m %}
            {% when '1' %}Enero
@@ -77,7 +77,7 @@ layout: nav-content
 
 	    <div class="item ">
         <a class="image" href="{{ site.baseurl }}{{ post.url }}">
-          <img src="{{ post.img }}" alt="{{ post.title }}" width="250px">
+          <img src="{{ post.img }}" alt="{{ post.title }}" width="230px">
         </a>    
       </div>
 	  {% endfor %}
