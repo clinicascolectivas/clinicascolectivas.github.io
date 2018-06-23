@@ -29,9 +29,9 @@
 		top: 20px;
 		left: 15px;
 		display: block;
-		-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
-		-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
-		transition: all .4s cubic-bezier(0.7,0,.3,1);
+		//-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
+		//-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
+		//transition: all .4s cubic-bezier(0.7,0,.3,1);
 		overflow: hidden;
 
 		@include media($vertical) {

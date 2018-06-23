@@ -15,6 +15,6 @@ permalink: /:categories/:title/
 sass:
   sass_dir: _scss
 
-host: 10.0.2.15
+host: 192.168.0.27
 
 livereload: true     # You no longer need to include --livereload

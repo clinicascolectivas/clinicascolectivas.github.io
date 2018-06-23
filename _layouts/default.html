@@ -49,6 +49,8 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js"></script>
+
 </head>
 <body>
 	
@@ -66,9 +68,17 @@
 	{{content}}
 
 	<footer style="text-align: center; display: block; padding: 2em 0">
-		<a href="/trabajos" class="logo" >
-			<img src="/img/logo-clinicas.svg" alt="" >
-		</a>
+		<div id="bm" style="width: 50px; margin: 0 auto"></div>
+
+<script>
+var animation = bodymovin.loadAnimation({
+  container: document.getElementById('bm'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: '/img/clinicas-colectivas.json'
+})
+</script>
 	</footer>
 
 	<div class="js-menu-screen sliding-panel-fade-screen"></div>
